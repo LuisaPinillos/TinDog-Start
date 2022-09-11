@@ -29,6 +29,8 @@ body {
     padding: 3% 15%;
 }
 
+/* --- Title Section--- */
+
 #title {
     background-color: #937DC2;
 }
@@ -48,6 +50,23 @@ h1 {
     margin: 5% 3% 5% 0;
 }
 
+/* --- Feature --- */
+
+.cont-features {
+    padding: 15% 0;
+}
+
+.fa-solid {
+    color: #E8A0BF;
+    font-size: 4.5rem;
+}
+
+.fa-solid:hover {
+    color: #C689C6;
+}
+
+/* -- Responsive -- */
+
 @media only screen and (max-width: 1234px) and (min-width: 1129px) {
     h1 {
         font-size: 3.2rem;  
@@ -57,5 +76,11 @@ h1 {
 @media only screen and (max-width: 1128px) {
     h1 {
         font-size: 2.8rem;  
+    }
+}
+
+@media  screen and (max-width: 992px) {
+    .feat-div {
+        margin-bottom: 10%;
     }
 }
