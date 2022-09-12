@@ -30,15 +30,23 @@ body {
     color: var(--bg-secundary) !important;
 }
 
+/* --- Containers --- */
+
 .container-fluid {
     padding: 7% 15%;
 }
 
-/* --- Title Section--- */
+/* --- Sections--- */
 
-#title {
+.purple-section {
     background-color: var(--bg-primary);
 }
+
+.pink-section {
+    background-color: var(--bg-secundary);
+}
+
+/* --- Title Section--- */
 
 .title {
     font-size: var(--font-size-title);  
@@ -65,10 +73,6 @@ body {
     position: relative; /* Phone image under the features section */
 }
 
-.cont-feat {
-    padding: 7% 15%;
-}
-
 .fa-solid {
     color: var(--bg-secundary);
     font-size: 4.5rem;
@@ -79,15 +83,6 @@ body {
 }
 
 /* --- Testimonials Section --- */
-
-#testimonials,
-#press {
-    background-color: var(--bg-secundary);
-}
-
-.carousel-item { 
-    padding: 7% 15%;
-}
 
 .testimonial-image {
     width: 15%;
@@ -109,12 +104,6 @@ body {
 
 .pricing-title {
     color: var(--bg-primary);
-}
-
-/* --- Call to Action Section --- */
-
-#cta {
-    background-color: var(--bg-primary);
 }
 
 /* --- Footer --- */
