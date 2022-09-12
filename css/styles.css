@@ -26,10 +26,6 @@ body {
     font-weight: var(--ubuntu-bold-font);
 }
 
-.navbar {
-    margin-bottom: 4.5rem;
-}
-
 .navbar-nav .nav-link:hover {
     color: var(--bg-secundary) !important;
 }
@@ -44,7 +40,7 @@ body {
     background-color: var(--bg-primary);
 }
 
-h1 {
+.title {
     font-size: var(--font-size-title);  
     font-weight: var(--montserrat-bold-font);
 }
@@ -148,7 +144,7 @@ footer {
         padding: 5% 10% 2%;
     }
 
-    .cta-title {
+    .title {
         font-size: var(--font-size-title);
     }
 }
@@ -163,8 +159,7 @@ footer {
         padding-bottom: 7%;
     }
 
-    h1,
-    .cta-title {
+    .title {
         font-size: var(--font-size-title-big);
     }
 
@@ -182,7 +177,6 @@ footer {
     .iphone-img {
         position: static;
         transform: rotate(0);
-        text-align: center;
     }
 
     .cont-title {
@@ -193,15 +187,13 @@ footer {
         padding-bottom: 7%;
     }
 
-    h1,
-    .cta-title {
+    .title {
         font-size: var(--font-size-title-medium);
     }
 }
 
 @media screen and (max-width: 700px) {
-    h1,
-    .cta-title  {
+    .title  {
         font-size: var(--font-size-title-little);
     }
 }
