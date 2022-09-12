@@ -11,8 +11,8 @@
 
     --font-size-title: 3.5rem;
     --font-size-title-big: 2.7rem;
-    --font-size-title-medium: 3.2rem;
-    --font-size-title-little: 2.3rem;
+    --font-size-title-medium: 3rem;
+    --font-size-title-little: 2rem;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 .container-fluid {
-    padding: 0 15%;
+    padding: 7% 15%;
 }
 
 /* --- Title Section--- */
@@ -66,7 +66,7 @@ body {
 }
 
 .cont-feat {
-    padding: 7% 0;
+    padding: 7% 15%;
 }
 
 .fa-solid {
@@ -96,7 +96,6 @@ body {
 
 /* --- Press Section --- */
 
-
 .press-logo {
     width: 15%;
     margin: 20px 20px 50px;
@@ -104,22 +103,25 @@ body {
 
 /* --- Pricing Section --- */
 
-#pricing {
-    padding: 7% 8%;
+.cont-pricing {
+    padding: 7% 10%;
+}
+
+.pricing-title {
+    color: var(--bg-primary);
 }
 
 /* --- Call to Action Section --- */
-
-#cta,
-footer {
-    padding: 7% 12% 3%;
-}
 
 #cta {
     background-color: var(--bg-primary);
 }
 
 /* --- Footer --- */
+
+#footer {
+    padding: 7% 15% 3%;
+}
 
 .icon-footer {
     font-size: 25px;
@@ -149,7 +151,6 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 992px) and (max-width: 1245px) {
     #title {
         max-height: 550px;
@@ -166,7 +167,6 @@ footer {
     #pricing .card-text {
         padding-bottom: 40px;
     }
-
 }
 
 @media  screen and (max-width: 991px) {
