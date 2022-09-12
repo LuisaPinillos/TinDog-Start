@@ -4,6 +4,15 @@
 
     --ubuntu-font: 'Ubuntu', sans-serif;
     --ubuntu-bold-font: 700;
+
+    --bg-primary: #937DC2;
+    --bg-secundary: #E8A0BF;
+    --bg-hover: #C689C6;
+
+    --font-size-title: 3.5rem;
+    --font-size-title-big: 2.7rem;
+    --font-size-title-medium: 3.2rem;
+    --font-size-title-little: 2.3rem;
 }
 
 body {
@@ -22,22 +31,21 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #E8A0BF !important;
+    color: var(--bg-secundary) !important;
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 0 15%;
 }
 
 /* --- Title Section--- */
 
 #title {
-    background-color: #937DC2;
+    background-color: var(--bg-primary);
 }
 
 h1 {
-    font-size: 3.5rem;  
-    line-height: 1.5;  
+    font-size: var(--font-size-title);  
     font-weight: var(--montserrat-bold-font);
 }
 
@@ -46,18 +54,27 @@ h1 {
     transform: rotate(25deg);
 }
 
-.download-button {
-    margin: 5% 3% 5% 0;
+.download-button-apple,
+.download-button-gplay {
+    margin: 5% 0;
 }
 
-/* --- Feature --- */
+.download-button-apple {
+    margin-right: 3%;
+}
 
-.cont-features {
-    padding: 15% 0;
+/* --- Feature Section --- */
+
+#features {
+    position: relative; /* Phone image under the features section */
+}
+
+.cont-feat {
+    padding: 7% 0;
 }
 
 .fa-solid {
-    color: #E8A0BF;
+    color: var(--bg-secundary);
     font-size: 4.5rem;
 }
 
@@ -65,22 +82,126 @@ h1 {
     color: #C689C6;
 }
 
-/* -- Responsive -- */
+/* --- Testimonials Section --- */
 
-@media only screen and (max-width: 1234px) and (min-width: 1129px) {
-    h1 {
-        font-size: 3.2rem;  
+#testimonials,
+#press {
+    background-color: var(--bg-secundary);
+}
+
+.carousel-item { 
+    padding: 7% 15%;
+}
+
+.testimonial-image {
+    width: 15%;
+    border-radius: 100%;
+}
+
+/* --- Press Section --- */
+
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* --- Pricing Section --- */
+
+#pricing {
+    padding: 7% 8%;
+}
+
+/* --- Call to Action Section --- */
+
+#cta,
+footer {
+    padding: 7% 12% 3%;
+}
+
+#cta {
+    background-color: var(--bg-primary);
+}
+
+/* --- Footer --- */
+
+.icon-footer {
+    font-size: 25px;
+}
+
+.icon-footer:hover {
+    color:  var(--bg-hover)
+}
+
+/* ---- Responsive ---- */
+
+@media screen and (min-width: 1246px) {
+    #title {
+        max-height: 650px;
+    }
+
+    #pricing .card-text {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        padding: 5% 10% 2%;
+    }
+
+    .cta-title {
+        font-size: var(--font-size-title);
     }
 }
 
-@media only screen and (max-width: 1128px) {
-    h1 {
-        font-size: 2.8rem;  
+
+@media screen and (min-width: 992px) and (max-width: 1245px) {
+    #title {
+        max-height: 550px;
     }
+
+    .container-fluid {
+        padding-bottom: 7%;
+    }
+
+    h1,
+    .cta-title {
+        font-size: var(--font-size-title-big);
+    }
+
+    #pricing .card-text {
+        padding-bottom: 40px;
+    }
+
 }
 
-@media  screen and (max-width: 992px) {
+@media  screen and (max-width: 991px) {
     .feat-div {
-        margin-bottom: 10%;
+        margin-bottom: 7%;
+    }
+
+    .iphone-img {
+        position: static;
+        transform: rotate(0);
+        text-align: center;
+    }
+
+    .cont-title {
+        text-align: center;
+    }
+
+    .container-fluid {
+        padding-bottom: 7%;
+    }
+
+    h1,
+    .cta-title {
+        font-size: var(--font-size-title-medium);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1,
+    .cta-title  {
+        font-size: var(--font-size-title-little);
     }
 }
