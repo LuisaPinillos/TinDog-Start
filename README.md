@@ -6,7 +6,7 @@
 
 This project was maked for practicing and its part of a web development course.
 
-The webpage is responsive for smartphones, tablets and desktops
+The webpage is responsive for smartphones, tablets and desktops.
 
 ## Built With
 
